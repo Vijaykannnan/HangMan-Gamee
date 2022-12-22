@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 70%;
+  min-height: 100vh;
+  background-color: rgb(6, 226, 6);
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.main-content {
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.main-content em {
+  color: red;
+  font-weight: 800;
+}
+
+.chracters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chracters span {
+  width: 30px;
+  height: 25px;
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.puzzle {
+  margin-top: 10%;
+  margin-left: 7%;
+  display: flex;
+}
+
+.puzzle span {
+  width: 50px;
+  /* height: 25px; */
+  /* background: tomato; */
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin-right: 30px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heart {
+  margin-top: 10%;
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+}
+
+.heart i {
+  color: red;
+  margin-right: 10px;
+}
+
+.path {
+  width: 50%;
+  height: 40%;
+  margin-top: 15%;
+  background: #000;
+  position: absolute;
+  bottom: 15%;
+  left: 26%;
+  z-index: 1;
+  color: #fff;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.path h1 {
+  text-align: end;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.path h4 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+@media all and (max-width:430px) {
+  .container {
+    width: 100%;
+  }
+
+  .puzzle span {
+    font-size: 25px;
+  }
+
+  .chracters span {
+    width: 15px;
+    height: 15px;
+    padding: 11px;
+  }
+
+  .hint {
+    font-size: 16px;
+  }
+
+  .puzzle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--fontawesome link-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+  <div class="path">
+    <h1 class="remove">X</h1>
+    <h4>You choosed an correct letter</h4>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <h1>Welcome to Hangman</h1>
+      <div class="main-content">
+        <i><em>Note:</em>:Every wrong answer to reduce your hearts</i>
+        <br /><br />
+        <div class="chracters">
+          <span onclick="correct('a',this)">A</span>
+          <span onclick="wrong(this)">B</span>
+          <span onclick="wrong(this)">C</span>
+          <span onclick="wrong(this)">D</span>
+          <span onclick="wrong(this)">E</span>
+          <span onclick="wrong(this)">F</span>
+          <span onclick="wrong(this)">G</span>
+          <span onclick="wrong(this)">H</span>
+          <span onclick="correct('i',this)">I</span>
+          <span onclick="correct('j',this)">J</span>
+          <span onclick="correct('k',this)">K</span>
+          <span onclick="wrong(this)">L</span>
+          <span onclick="wrong(this)">M</span>
+          <span onclick="correct('n',this)">N</span>
+          <span onclick="wrong(this)">O</span>
+          <span onclick="wrong(this)">P</span>
+          <span onclick="wrong(this)">Q</span>
+          <span onclick="wrong(this)">R</span>
+          <span onclick="wrong(this)">S</span>
+          <span onclick="wrong(this)">T</span>
+          <span onclick="wrong(this)">U</span>
+          <!-- <span onclick="correct('v',this)">V</span> -->
+          <span onclick="wrong(this)">W</span>
+          <span onclick="wrong(this)">X</span>
+          <span onclick="correct('y',this)">Y</span>
+          <span onclick="wrong(this)">Z</span>
+        </div>
+        <h4 class="hint">Use this alpahbets to find the word,All the best</h4>
+        <div class="puzzle">
+          <span>V</span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span>N</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h2 class="heart"><i class="fas fa-heart"></i> <strong></strong></h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
