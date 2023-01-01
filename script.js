@@ -65,8 +65,8 @@ function correct(val, alpha) {
 }
 
 //Wrong answer
-let path_button = document.querySelector(".play-again");
-console.log(path_button);
+// let path_button = document.querySelector(".play-again");
+// console.log(path_button);
 let wrongStyles = {
   opacity: 1,
   background: "red",
